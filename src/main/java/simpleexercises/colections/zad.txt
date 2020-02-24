@@ -1,0 +1,18 @@
+1. Stwórz klasę Osoba (imie, nazwisko, wiek). Stwórz 5 obiektów tej klasy i dodaj je do listy.
+Wypisz na ekranie wszystkie osoby.
+2. Wczytuj (Scanner) od użytkownika liczby tak długo, aż wpisze on -1. Wypisz najmniejszą z nich.
+Liczby zapamiętuj na liście.
+3. Zmodyfikuj sortowanie filmów w taki sposób, aby były sortowane w odwrotnej kolejności
+4. Poszukaj informacji o interfejsie Comparator. Zmień program filmy tak, aby można było je sortować zarówno po
+tytule jak i po roku produkcji.
+5. Wczytaj od użytkownika zdanie i wyświetl jakie litery w nim sie znajdują
+6. Utwórz listę liczb: 4,7,8,3,4,8,7,89,12,1,1,5 i wyświetl te liczby bez powtórzeń
+7. Utwórz klasę Pracownik (imie, nazwisko, stanowisko). Dodaj 5 pracowników do zbioru. Usuń z niego dwóch pierwszych
+dodanych pracowników. Wyświetl zawartość zbioru.
+8. Wczytaj od użytkownika wyraz. Stwórz mapę, której kluczem będzie Character,
+a wartością ilość wystąpienia danego znaku w podanym wyrazie
+9. Ulepsz przykład z mapami stanowisk na listę pracowników tak, aby zamiast Stringa użyć
+klasę Pracownik(imie, nazwisko, wiek)
+10. Do przykładu z mapami stanowisk dodaj nadrzędną grupę firma. Stwórz strukturę:
+Map<String, Map<String, List<Pracownik>>>
+    firma       stanowsko
