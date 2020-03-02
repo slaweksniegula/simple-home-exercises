@@ -117,24 +117,13 @@ public class OwnerDatabaseTest {
         removeOwner.begin();
         Owner ownerToBeRemoved = entityManager.createQuery(findOwnerTom, Owner.class)
                 .getSingleResult();
-        entityManager.flush();
         entityManager.remove(ownerToBeRemoved);
         removeOwner.commit();
 
 //then
         List<Owner> isThereOwner = entityManager.createQuery(findOwners, Owner.class).getResultList();
         assertThat(isThereOwner.stream().map(owner -> owner.getFirstName())).doesNotContain("Tom");
-
-        //Dlaczego pokazuje mi, że owner został detached a nie removed?
-
-        //when
-//        EntityTransaction rePersistTom = entityManager.getTransaction();
-//        rePersistTom.begin();
-//        entityManager.persist(Tom);
-//        rePersistTom.commit();
-//then
-//        List<Owner> isThereOwnerTom = entityManager.createQuery(findOwners, Owner.class).getResultList();
-//        assertThat(isThereOwnerTom.stream().map(owner -> owner.getFirstName())).contains("Tom");
+        
 
     }
 
